@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out
-        uses: actions/checkout@v
+        uses: actions/checkout@v4
 
       - name: Install Emacs
         run: sudo apt install emacs-nox --yes
@@ -22,7 +22,7 @@ jobs:
         run: ./build.sh
 
       - name: Publish generated content to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: JamesIves/github-pages-deploy-action@4.6.8
         with:
           branch: main
           folder: public
