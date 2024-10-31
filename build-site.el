@@ -13,6 +13,11 @@
 ;; Install dependencies
 (package-install 'htmlize)
 
+
+(setq python-indent-guess-indent-offset t)
+(setq python-indent-guess-indent-offset-verbose nil)
+
+
 ;; Load the publishing system
 (require 'ox-publish)
 
@@ -39,4 +44,4 @@
 ;; Generate the site output
 (org-publish-all t)
 
-;;(message "Build complete!")
+(message "Build complete!")
