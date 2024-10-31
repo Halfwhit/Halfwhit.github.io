@@ -1,5 +1,8 @@
-;; Set the package installation directory so that packages aren't stored in the
-;; ~/.emacs.d/elpa path.
+#+title: Readme
+#+PROPERTY: header-args :tangle build.el
+This repository contains the build scripts to generate my blog, as well as the GitHub Actions to host it on github pages.
+
+#+begin_src emacs-lisp :shebang "#!/bin/emacs --script"
 (require 'package)
 (setq package-user-dir (expand-file-name "./.packages"))
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
@@ -12,11 +15,6 @@
 
 ;; Install dependencies
 (package-install 'htmlize)
-
-
-(setq python-indent-guess-indent-offset t)
-(setq python-indent-guess-indent-offset-verbose nil)
-
 
 ;; Load the publishing system
 (require 'ox-publish)
@@ -45,3 +43,4 @@
 (org-publish-all t)
 
 (message "Build complete!")
+#+end_src
