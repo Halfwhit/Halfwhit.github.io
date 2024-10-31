@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Halfwhit's Blog</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Halfwhit's Blog</h1>
+
+<div id="outline-container-orga646f36" class="outline-2">
+<h2 id="orga646f36">Welcome</h2>
+<div class="outline-text-2" id="text-orga646f36">
+<p>
+This is the start of my Org-mode blog! Hosted on GitHub!
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbaa7c21" class="outline-2">
+<h2 id="orgbaa7c21">Codeblocks</h2>
+<div class="outline-text-2" id="text-orgbaa7c21">
+<p>
+This is a sample codeblock:
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span style="font-weight: bold;">def</span> <span style="font-weight: bold;">init_top_widgets</span>():
+    <span style="font-weight: bold; font-style: italic;">top_widgets_list</span> = [
+        <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Set background using WordClock widget (qtile_extras)</span>
+        widget.WordClock(fontsize=70),
+        widget.Image(
+                 filename = <span style="font-style: italic;">"~/.config/qtile/icons/logo.png"</span>,
+                 scale = <span style="font-style: italic;">"False"</span>,
+                 mouse_callbacks = {<span style="font-style: italic;">'Button1'</span>: <span style="font-weight: bold;">lambda</span>: qtile.cmd_spawn(myTerm)},
+                 ),
+        widget.Prompt(),
+        widget.GroupBox(
+                 fontsize = 11,
+                 margin_y = 5,
+                 margin_x = 5,
+                 padding_y = 0,
+                 padding_x = 1,
+                 borderwidth = 3,
+                 active = colors[8],
+                 inactive = colors[1],
+                 rounded = <span style="font-weight: bold; text-decoration: underline;">False</span>,
+                 highlight_color = colors[2],
+                 highlight_method = <span style="font-style: italic;">"line"</span>,
+                 this_current_screen_border = colors[7],
+                 this_screen_border = colors [4],
+                 other_current_screen_border = colors[7],
+                 other_screen_border = colors[4],
+                 disable_drag = <span style="font-weight: bold; text-decoration: underline;">True</span>
+                 ),
+        widget.CurrentLayout(),
+        widget.Spacer(),
+        ]
+    <span style="font-weight: bold;">return</span> top_widgets_list
+
+<span style="font-weight: bold;">def</span> <span style="font-weight: bold;">init_bottom_widgets</span>():
+    <span style="font-weight: bold; font-style: italic;">bottom_widgets_list</span> = [
+        widget.TextBox(
+                 <span style="font-style: italic;">"Halfwhit OS"</span>, name=<span style="font-style: italic;">"system"</span>,
+                 mouse_callbacks = {<span style="font-style: italic;">'Button1'</span>: <span style="font-weight: bold;">lambda</span>: qtile.cmd_spawn(<span style="font-style: italic;">"rofi -show drun"</span>)}),
+        widget.Spacer(),
+        widget.Prompt(),
+        widget.Chord(
+                 chords_colours={<span style="font-style: italic;">"launch"</span>: (<span style="font-style: italic;">"#ff0000"</span>, <span style="font-style: italic;">"#ffffff"</span>),},
+                    name_transform=<span style="font-weight: bold;">lambda</span> name: name.upper(),
+                ),
+                <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">NB Systray is incompatible with Wayland, consider using StatusNotifier instead</span>
+                <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">widget.StatusNotifier(),</span>
+                widget.Systray(),
+                widget.QuickExit(),
+    ]
+    <span style="font-weight: bold;">return</span> bottom_widgets_list
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge4f90c4" class="outline-2">
+<h2 id="orge4f90c4">Links</h2>
+<div class="outline-text-2" id="text-orge4f90c4">
+<ul class="org-ul">
+<li><a href="https://github.com/Halfwhit">Halfwhit's GitHub</a></li>
+<li><a href="https://github.com/Halfwhit/halfwhit.github.io">This site on GitHub</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.4 (<a href="https://orgmode.org">Org</a> mode 9.6.15)</p>
+</div>
+</body>
+</html>
