@@ -1,0 +1,66 @@
+#+title: Halfwhit's Blog
+
+* Welcome
+
+This is the start of my Org-mode blog! Hosted on GitHub!
+
+* Codeblocks
+
+This is a sample codeblock:
+#+begin_src python
+def init_top_widgets():
+    top_widgets_list = [
+        # Set background using WordClock widget (qtile_extras)
+        widget.WordClock(fontsize=70),
+        widget.Image(
+                 filename = "~/.config/qtile/icons/logo.png",
+                 scale = "False",
+                 mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(myTerm)},
+                 ),
+        widget.Prompt(),
+        widget.GroupBox(
+                 fontsize = 11,
+                 margin_y = 5,
+                 margin_x = 5,
+                 padding_y = 0,
+                 padding_x = 1,
+                 borderwidth = 3,
+                 active = colors[8],
+                 inactive = colors[1],
+                 rounded = False,
+                 highlight_color = colors[2],
+                 highlight_method = "line",
+                 this_current_screen_border = colors[7],
+                 this_screen_border = colors [4],
+                 other_current_screen_border = colors[7],
+                 other_screen_border = colors[4],
+                 disable_drag = True
+                 ),
+        widget.CurrentLayout(),
+        widget.Spacer(),
+        ]
+    return top_widgets_list
+
+def init_bottom_widgets():
+    bottom_widgets_list = [
+        widget.TextBox(
+                 "Halfwhit OS", name="system",
+                 mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("rofi -show drun")}),
+        widget.Spacer(),
+        widget.Prompt(),
+        widget.Chord(
+                 chords_colours={"launch": ("#ff0000", "#ffffff"),},
+                    name_transform=lambda name: name.upper(),
+                ),
+                # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
+                # widget.StatusNotifier(),
+                widget.Systray(),
+                widget.QuickExit(),
+    ]
+    return bottom_widgets_list
+#+end_src
+
+* Links
+
++ [[https://github.com/Halfwhit][Halfwhit's GitHub]]
++ [[https://github.com/Halfwhit/halfwhit.github.io][This site on GitHub]]
