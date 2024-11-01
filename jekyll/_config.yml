@@ -1,0 +1,32 @@
+title: Halfwhit Hacks
+description: "Halfwhit's Personal Blog"
+author:
+  name: "Halfwhit"
+  email: "halfwhit@gmail.com"
+  url: "https://halfwhit.github.io"
+
+baseurl: /
+
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 3
+paginate_path: /page/:num/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+future: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Custom variables
+owner : "Halfwhit"
+year : "2024"
