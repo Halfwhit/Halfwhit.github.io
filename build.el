@@ -24,16 +24,15 @@
 ;; Define the publishing project
 (setq org-publish-project-alist
       (list
-       (list "halfwhit.github.io"
+       (list "blog-posts"
              :recursive t
-             :base-directory "./content/"
+             :base-directory "./org/"
+             :base-extension "org"
              :publishing-function 'org-html-publish-to-html
-             :publishing-directory "./public"
-             :with-author nil
-             :with-creator nil
+             :publishing-directory "./jekyll/"
+             :body-only t
              :with-toc nil
-             :section-numbers nil
-             :time-stamp-file nil)))
+             :section-numbers nil)))
 
 ;; Generate the site output
 (org-publish-all t)

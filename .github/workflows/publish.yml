@@ -22,8 +22,17 @@ jobs:
       - name: Build the site
         run: ./build.el
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./jekyll/
+          destination: ./jekyll/_site
+
       - name: Publish generated content to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: public
+          folder: jekyll/_site

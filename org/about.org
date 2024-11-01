@@ -1,5 +1,10 @@
 #+title: Halfwhit Hacks
-
+#+begin_export html
+---
+layout: page
+title: Hello World!
+---
+#+end_export
 * Welcome
 
 I am Halfwhit, and this is my personal blog. I've been toying with the idea of using blogging to help organise myself, my life, and my thoughts in addition to building out a zettlekasten inspired knowledge database.
