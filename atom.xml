@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Halfwhit Hacks</title>
+    <description>Halfwhit&apos;s Personal Blog</description>
+    <link>https://halfwhit.github.io</link>
+    <atom:link href="https://halfwhit.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <author>
+      <name>Halfwhit</name>
+      <email>halfwhit@gmail.com</email>
+      <uri>https://halfwhit.github.io</uri>
+    </author>
+    
+  </channel>
+</rss>
