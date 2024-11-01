@@ -1,3 +1,4 @@
 .packages/
+.jekyll-cache
 jekyll/about.html
 jekyll/_posts/
