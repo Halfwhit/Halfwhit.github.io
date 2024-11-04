@@ -5,26 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta name="generator" content="Jekyll">
 
-  <title>Halfwhit Hacks</title>
+  <title>CVE-2024-38094: Sharepoint in Shambles</title>
 
   <link rel="stylesheet" href="/css/main.css">
   
   <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" /> <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Halfwhit Hacks | Halfwhit’s Personal Blog</title>
+<title>CVE-2024-38094: Sharepoint in Shambles | Halfwhit Hacks</title>
 <meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Halfwhit Hacks" />
+<meta property="og:title" content="CVE-2024-38094: Sharepoint in Shambles" />
 <meta name="author" content="Halfwhit" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Halfwhit’s Personal Blog" />
-<meta property="og:description" content="Halfwhit’s Personal Blog" />
-<link rel="canonical" href="https://halfwhit.uk/2024-11-04-sharepoint-in-shambles" />
-<meta property="og:url" content="https://halfwhit.uk/2024-11-04-sharepoint-in-shambles" />
+<meta name="description" content="Overview CVE-2024-38094 is a severe remote code execution (RCE) vulnerability impacting Microsoft SharePoint Server, posing a significant security risk for organisations. This flaw, scored 7.2 on the CVSS scale, allows attackers with Site Owner privileges to execute arbitrary code, potentially leading to a full domain compromise. The vulnerability has garnered attention as proof-of-concept (PoC) exploit code is already publicly available, and active exploitation has been confirmed." />
+<meta property="og:description" content="Overview CVE-2024-38094 is a severe remote code execution (RCE) vulnerability impacting Microsoft SharePoint Server, posing a significant security risk for organisations. This flaw, scored 7.2 on the CVSS scale, allows attackers with Site Owner privileges to execute arbitrary code, potentially leading to a full domain compromise. The vulnerability has garnered attention as proof-of-concept (PoC) exploit code is already publicly available, and active exploitation has been confirmed." />
+<link rel="canonical" href="https://halfwhit.uk/sharepoint-in-shambles" />
+<meta property="og:url" content="https://halfwhit.uk/sharepoint-in-shambles" />
 <meta property="og:site_name" content="Halfwhit Hacks" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-11-04T00:00:00+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Halfwhit Hacks" />
+<meta property="twitter:title" content="CVE-2024-38094: Sharepoint in Shambles" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Halfwhit","url":"https://halfwhit.github.io"},"description":"Halfwhit’s Personal Blog","headline":"Halfwhit Hacks","url":"https://halfwhit.uk/2024-11-04-sharepoint-in-shambles"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Halfwhit","url":"https://halfwhit.github.io"},"dateModified":"2024-11-04T00:00:00+00:00","datePublished":"2024-11-04T00:00:00+00:00","description":"Overview CVE-2024-38094 is a severe remote code execution (RCE) vulnerability impacting Microsoft SharePoint Server, posing a significant security risk for organisations. This flaw, scored 7.2 on the CVSS scale, allows attackers with Site Owner privileges to execute arbitrary code, potentially leading to a full domain compromise. The vulnerability has garnered attention as proof-of-concept (PoC) exploit code is already publicly available, and active exploitation has been confirmed.","headline":"CVE-2024-38094: Sharepoint in Shambles","mainEntityOfPage":{"@type":"WebPage","@id":"https://halfwhit.uk/sharepoint-in-shambles"},"url":"https://halfwhit.uk/sharepoint-in-shambles"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -48,11 +49,11 @@
     <div class="container">
       <section id="main_content">
         <article>
-  <h2></h2>
-  <time datetime="" class="by-line"></time>
-  <div id="outline-container-orga3a02a9" class="outline-2">
-<h2 id="orga3a02a9">Overview</h2>
-<div class="outline-text-2" id="text-orga3a02a9">
+  <h2>CVE-2024-38094: Sharepoint in Shambles</h2>
+  <time datetime="2024-11-04T00:00:00+00:00" class="by-line">04 Nov 2024</time>
+  <div id="outline-container-org30cba1a" class="outline-2">
+<h2 id="org30cba1a">Overview</h2>
+<div class="outline-text-2" id="text-org30cba1a">
 <p>
 CVE-2024-38094 is a severe remote code execution (RCE) vulnerability impacting Microsoft SharePoint Server, posing a significant security risk for organisations. This flaw, scored 7.2 on the CVSS scale, allows attackers with Site Owner privileges to execute arbitrary code, potentially leading to a full domain compromise. The vulnerability has garnered attention as proof-of-concept (PoC) exploit code is already publicly available, and active exploitation has been confirmed.
 </p>
@@ -63,36 +64,36 @@ Organisations relying on SharePoint for collaboration and document management ar
 </div>
 </div>
 
-<div id="outline-container-org55167c8" class="outline-2">
-<h2 id="org55167c8">Details</h2>
-<div class="outline-text-2" id="text-org55167c8">
+<div id="outline-container-org7312b01" class="outline-2">
+<h2 id="org7312b01">Details</h2>
+<div class="outline-text-2" id="text-org7312b01">
 <p>
 The flaw arises from a deserialization vulnerability that enables attackers to exploit crafted API requests. Once successful, they can deploy web shells, escalate privileges, and move laterally within the network, potentially compromising critical domain resources. Microsoft released a patch in July 2024 to address this issue, urging all organisations relying on SharePoint to apply it promptly.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org6ec0c6e" class="outline-2">
-<h2 id="org6ec0c6e">Mitigation</h2>
-<div class="outline-text-2" id="text-org6ec0c6e">
+<div id="outline-container-orgd2e7be8" class="outline-2">
+<h2 id="orgd2e7be8">Mitigation</h2>
+<div class="outline-text-2" id="text-orgd2e7be8">
 <p>
 For organisations that have not yet updated, immediate action is critical. Applying the July patch will mitigate this vulnerability, while monitoring SharePoint logs for abnormal API requests and unexpected file changes can help detect any signs of exploitation.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgdc5f864" class="outline-2">
-<h2 id="orgdc5f864">Conclusion</h2>
-<div class="outline-text-2" id="text-orgdc5f864">
+<div id="outline-container-org3366c4d" class="outline-2">
+<h2 id="org3366c4d">Conclusion</h2>
+<div class="outline-text-2" id="text-org3366c4d">
 <p>
 CVE-2024-38094 is a pressing security issue that requires immediate attention. With active exploitation and PoC code available, organisations should prioritise patching and consider enhanced monitoring to mitigate the risk posed by this vulnerability.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org23e720c" class="outline-2">
-<h2 id="org23e720c">References:</h2>
-<div class="outline-text-2" id="text-org23e720c">
+<div id="outline-container-org8f0ac5b" class="outline-2">
+<h2 id="org8f0ac5b">References:</h2>
+<div class="outline-text-2" id="text-org8f0ac5b">
 <ul class="org-ul">
 <li><a href="https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38094">https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38094</a></li>
 <li><a href="https://github.com/testanull/MS-SharePoint-July-Patch-RCE-PoC">https://github.com/testanull/MS-SharePoint-July-Patch-RCE-PoC</a></li>
