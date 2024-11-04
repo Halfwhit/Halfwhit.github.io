@@ -12,6 +12,64 @@
     </author>
     
       <item>
+        <title></title>
+        <description>&lt;div id=&quot;outline-container-orga3a02a9&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;orga3a02a9&quot;&gt;Overview&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orga3a02a9&quot;&gt;
+&lt;p&gt;
+CVE-2024-38094 is a severe remote code execution (RCE) vulnerability impacting Microsoft SharePoint Server, posing a significant security risk for organisations. This flaw, scored 7.2 on the CVSS scale, allows attackers with Site Owner privileges to execute arbitrary code, potentially leading to a full domain compromise. The vulnerability has garnered attention as proof-of-concept (PoC) exploit code is already publicly available, and active exploitation has been confirmed.
+&lt;/p&gt;
+
+&lt;p&gt;
+Organisations relying on SharePoint for collaboration and document management are especially vulnerable, as attackers have shown an interest in exploiting unpatched servers to gain entry. Microsoft addressed the flaw in their July 2024 security patch, urging SharePoint administrators to apply the update immediately. However, many systems remain unpatched, heightening the risk of compromise.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-org55167c8&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;org55167c8&quot;&gt;Details&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org55167c8&quot;&gt;
+&lt;p&gt;
+The flaw arises from a deserialization vulnerability that enables attackers to exploit crafted API requests. Once successful, they can deploy web shells, escalate privileges, and move laterally within the network, potentially compromising critical domain resources. Microsoft released a patch in July 2024 to address this issue, urging all organisations relying on SharePoint to apply it promptly.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-org6ec0c6e&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;org6ec0c6e&quot;&gt;Mitigation&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org6ec0c6e&quot;&gt;
+&lt;p&gt;
+For organisations that have not yet updated, immediate action is critical. Applying the July patch will mitigate this vulnerability, while monitoring SharePoint logs for abnormal API requests and unexpected file changes can help detect any signs of exploitation.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-orgdc5f864&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;orgdc5f864&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-orgdc5f864&quot;&gt;
+&lt;p&gt;
+CVE-2024-38094 is a pressing security issue that requires immediate attention. With active exploitation and PoC code available, organisations should prioritise patching and consider enhanced monitoring to mitigate the risk posed by this vulnerability.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-org23e720c&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;org23e720c&quot;&gt;References:&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-org23e720c&quot;&gt;
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38094&quot;&gt;https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-38094&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/testanull/MS-SharePoint-July-Patch-RCE-PoC&quot;&gt;https://github.com/testanull/MS-SharePoint-July-Patch-RCE-PoC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+        <pubDate></pubDate>
+        <link>https://halfwhit.uk//2024-11-04-sharepoint-in-shambles</link>
+        <link href="https://halfwhit.uk/2024-11-04-sharepoint-in-shambles"/>
+        <guid isPermaLink="true">https://halfwhit.uk/2024-11-04-sharepoint-in-shambles</guid>
+      </item>
+    
+      <item>
         <title>Learning to Learn</title>
         <description>&lt;p&gt;
 I never used to particularly enjoy the process of learning back at school; the pacing didn&apos;t suit me, I was easily distracted and for the majority of subjects just wasn&apos;t interested. Since growing into an adult shape, I have identified that I actually &lt;b&gt;love&lt;/b&gt; learning, now that I have the freedom to follow my own interests and threads of knowledge.
