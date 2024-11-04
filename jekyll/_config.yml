@@ -3,7 +3,7 @@ description: "Halfwhit's Personal Blog"
 author:
   name: "Halfwhit"
   email: "halfwhit@gmail.com"
-  url: "https://halfwhit.github.io"
+  url: "https://halfwhit.uk"
 
 baseurl: /
 
@@ -14,6 +14,11 @@ paginate: 3
 paginate_path: /page/:num/
 
 defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: en_GB
   -
     scope:
       path: ""
