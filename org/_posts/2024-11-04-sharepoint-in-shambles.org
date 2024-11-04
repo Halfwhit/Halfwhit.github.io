@@ -3,7 +3,7 @@
 #+begin_export html
 ---
 layout: post
-title: CVE-2024-38094: Sharepoint in Shambles
+title: "CVE-2024-38094: Sharepoint in Shambles"
 excerpt:
 ---
 #+end_export
